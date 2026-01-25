@@ -8,6 +8,14 @@ box-sizing: border-box;
 --accent-color: black;
 
 }
+@media (min-width: 600px) {
+  .header {grid-area: 1 / span 6;}
+  .menu {grid-area: 2 / span 1;}
+  .content {grid-area: 2 / span 4;}
+  .facts {grid-area: 2 / span 1;}
+  .footer {grid-area: 3 / span 6;}
+}
+
 #title {
    width: 200%; 
    text-align: center; 
@@ -20,8 +28,8 @@ box-sizing: border-box;
     background-color: var(--primary-color);
     padding:0 10px 50px 10px;
 }
-h2 {
-    width: 30%;
+#objective h2, #education h1, #education h2, #experience h1 {
+    width: 50%;
     text-align: center; 
     border-bottom: 1px solid var(--accent-color);
     line-height: 0.1em;
@@ -40,6 +48,7 @@ font-family: 'Adobe Gothic Std', Times, serif;
 }
 main {
 border-radius: .45rem;
+background-color: var(--primary-color);
 width:80%;
 padding: 2rem 1rem;
 margin: auto;
@@ -55,16 +64,42 @@ background-color: var(--primary-color);
 display: flex;
 flex-direction: column;
 align-items: center;
+
 }
 
-ul {
-    padding: 1rem 1rem 2rem 1rem;
-}
 #objective {
     background-color: var(--primary-color);
     padding: 0.5rem;
     text-align: center;
 }
+
+#education {
+    background-color: var(--secondary-color);
+    width: 50%;
+    border-radius: 5rem;
+    padding: 1rem 0 2rem 0;
+}
+#education span {
+    background-color: var(--secondary-color);
+    padding:0 10px 0px 10px;
+}
+
+#experience {
+    background-color: var(--secondary-color);
+    width: 50%;
+    border-radius: 5rem;
+    padding: 1rem 0 1rem 0;
+    margin-bottom: 3rem;
+    
+}
+#experience span{
+    width: 50%;
+    background-color: var(--secondary-color);
+    padding:0 10px 0px 10px;
+}
+
+
+
 #portrait {
 max-width: 300px;
 height: auto;
@@ -113,14 +148,17 @@ a:visited {
 }
 #my-projects {
 width: 100%;
-display: flex;
 margin-top: 1.5rem;
 border-radius:.45rem;
 }
-#projects{
-flex-direction: column;
-align-items: center;
-
+#projects {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-color);
+    border-radius: .45rem;
+    padding: 1rem 1rem 2rem 1rem;
 }
 #projects a img {
 max-width: 50px;
