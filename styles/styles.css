@@ -1,63 +1,105 @@
 * {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 :root {
-    --primary-color: rgb(196, 196, 196);
-    --background-color: rgb(92, 92, 92);
-    --accent-color: black;
+--primary-color: rgb(196, 196, 196);
+--background-color: rgb(92, 92, 92);
+--accent-color: black;
 
 }
+#title {
+   width: 200%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+}
 
+#title span{
+    background-color: var(--primary-color);
+    padding:0 10px;
+}
+h2{
+
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+h2 span{
+    background-color: var(--primary-color);
+    padding:0 10px;
+}
 
 body {
-    background-image: linear-gradient(to top, var(--background-color), var(--primary-color));
-    background-position: left top;
-    font-size: 15px;
-    font-family: 'Adobe Gothic Std', Times, serif;
+background-image: linear-gradient(to top, var(--background-color), var(--primary-color));
+background-position: left top;
+font-size: 15px;
+font-family: 'Adobe Gothic Std', Times, serif;
 }
 main {
-    
-    border-radius: .45rem;
-    width:80%;
-    padding: 2rem 1rem;
-    margin: auto;
+
+border-radius: .45rem;
+width:80%;
+padding: 2rem 1rem;
+margin: auto;
 }
 div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+display: flex;
+flex-direction: column;
+margin-top: 1.5rem;
+align-items: center;
 }
 section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#objective {
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    text-align: center;
 }
 #portrait {
-    max-width: 300px;
-    height: auto;
-    border-radius: 50%;
-    border: 1px solid rgb(44, 44, 44);
-    filter: drop-shadow(0px 20px 30px --accent-color);
+max-width: 300px;
+height: auto;
+border-radius: 50%;
+background-color: var(--primary-color);
+filter: drop-shadow(0px 20px 30px var(--accent-color));
+    transition: max-width;
+    transition-duration: 1s;
+    transition-delay: 0.1s;
 }
+#portrait:hover {
+    max-width: 350px;
+}
+
 #my-projects {
-    width: 100%;
-    display: flex;
-    background-image: linear-gradient(to bottom, var(--background-color), var(--primary-color));
-    margin-top: 1.5rem;
-    border-radius:.45rem;
+width: 100%;
+display: flex;
+margin-top: 1.5rem;
+border-radius:.45rem;
 }
 #projects{
-    flex-direction: column;
-    align-items: center;
-    
+flex-direction: column;
+align-items: center;
+
+}
+#projects a img {
+max-width: 50px;
+margin: 0 1rem;
 }
 #personal-links {
-    display: inline-block;
-    justify-content: center;
-    flex-direction: column;
+background-color: var(--primary-color);
+border-radius: 20px;
+margin-top: 30px;
+display: inline-block;
+flex-direction: column;
 }
 #personal-links a img {
+
+    padding: 0.5rem;
+    height: auto;
     max-width: 100px;
     margin: 0 1rem;
 }
-
