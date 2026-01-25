@@ -8,6 +8,7 @@ box-sizing: border-box;
 --accent-color: black;
 
 }
+/* from w3schools.com */
 @media (min-width: 600px) {
   .header {grid-area: 1 / span 6;}
   .menu {grid-area: 2 / span 1;}
@@ -16,89 +17,13 @@ box-sizing: border-box;
   .footer {grid-area: 3 / span 6;}
 }
 
-#title {
-   width: 200%; 
-   text-align: center; 
-   border-bottom: 1px solid var(--accent-color);
-   line-height: 0.1em;
-   margin: 10px 0 20px;
-}
-
-#title span{
-    background-color: var(--primary-color);
-    padding:0 10px 50px 10px;
-}
-#objective h2, #education h1, #education h2, #experience h1 {
-    width: 50%;
-    text-align: center; 
-    border-bottom: 1px solid var(--accent-color);
-    line-height: 0.1em;
-    margin: 10px 0 20px;
-}
-h2 span{
-    background-color: var(--primary-color);
-    padding:0 10px;
-}
-
-body {
-background-image: linear-gradient(to top, var(--background-color), var(--primary-color));
-background-position: left top;
-font-size: 15px;
-font-family: 'Adobe Gothic Std', Times, serif;
-}
 main {
 border-radius: .45rem;
 background-color: var(--primary-color);
-width:80%;
+width:90%;
 padding: 2rem 1rem;
 margin: auto;
 }
-div {
-display: flex;
-flex-direction: column;
-margin-top: 1.5rem;
-align-items: center;
-}
-section {
-background-color: var(--primary-color);
-display: flex;
-flex-direction: column;
-align-items: center;
-
-}
-
-#objective {
-    background-color: var(--primary-color);
-    padding: 0.5rem;
-    text-align: center;
-}
-
-#education {
-    background-color: var(--secondary-color);
-    width: 50%;
-    border-radius: 5rem;
-    padding: 1rem 0 2rem 0;
-}
-#education span {
-    background-color: var(--secondary-color);
-    padding:0 10px 0px 10px;
-}
-
-#experience {
-    background-color: var(--secondary-color);
-    width: 50%;
-    border-radius: 5rem;
-    padding: 1rem 0 1rem 0;
-    margin-bottom: 3rem;
-    
-}
-#experience span{
-    width: 50%;
-    background-color: var(--secondary-color);
-    padding:0 10px 0px 10px;
-}
-
-
 
 #portrait {
 max-width: 300px;
@@ -115,7 +40,7 @@ filter: drop-shadow(0px 20px 30px var(--accent-color));
 }
 
 p {
-    font-size: 12pt;
+    font-size: 16pt;
     margin: 0.5rem 0;
     display: flex;
     justify-content: center;
@@ -123,7 +48,6 @@ p {
 }
 
 #personal-links {
-border-radius: 20px;
 display: inline-block;
 flex-direction: column;
 }
@@ -146,21 +70,143 @@ a:link {
 a:visited {
     color: var(--accent-color)
 }
+
+#title {
+   width: 200%; 
+   text-align: center; 
+   border-bottom: 1px solid var(--accent-color);
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+}
+
+#title span{
+    background-color: var(--primary-color);
+    padding:0 10px 50px 10px;
+}
+#objective h2, #education h1, #education h2, #experience h1, #projects h1 {
+    width: 50%;
+    text-align: center; 
+    border-bottom: 1px solid var(--accent-color);
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+h2 span{
+    background-color: var(--primary-color);
+    padding:0 10px;
+}
+
+body {
+background-image: linear-gradient(to top, var(--background-color), var(--primary-color));
+background-position: left top;
+font-size: 15px;
+font-family: 'Adobe Gothic Std', Times, serif;
+}
+
+div {
+display: flex;
+flex-direction: column;
+margin-top: 1.5rem;
+align-items: center;
+}
+section {
+background-color: var(--primary-color);
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#objective {
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+#education {
+    background-color: var(--secondary-color);
+    border-radius: 5rem;
+    padding: 2rem 0 2rem 0;
+    width: 100%;
+}
+#education span {
+    background-color: var(--secondary-color);
+    padding:0 10px 0px 10px;
+}
+#logos {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#logos img{
+    max-width: 80px;
+    height: auto;
+    transition: max-width;
+    transition-duration: 1s;
+    transition-delay: 1ms;
+
+}
+#logos img:hover {
+    max-width: 100px;
+}
+
+#experience {
+    background-color: var(--secondary-color);
+    width: 100%;
+    border-radius: 5rem;
+    padding: 2rem 0 1rem 0;
+    margin-bottom: 3rem;
+    
+}
+#experience span{
+    width: 50%;
+    background-color: var(--secondary-color);
+    padding:0 10px 0px 10px;
+}
+
+ul li {
+    list-style-position: inside;
+    width: 100%;
+    border-radius: .45rem;
+    margin: 0.5rem 0.75rem;
+    padding: 1rem 0rem 0.5rem 1rem;
+    background-color: var(--primary-color);
+    transition: 1s
+
+}
+
+ul li:hover {
+    transform: scale(1.05);
+}
+
 #my-projects {
+display: flex;
+flex-direction: column;
+align-items: center;
 width: 100%;
 margin-top: 1.5rem;
-border-radius:.45rem;
+background-color: var(--secondary-color);
+border-radius: 2rem;
+
 }
 #projects {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+    padding: 1rem 1rem 30px 1rem;
     align-items: center;
-    background-color: var(--secondary-color);
-    border-radius: .45rem;
-    padding: 1rem 1rem 2rem 1rem;
 }
+
 #projects a img {
-max-width: 50px;
-margin: 0 1rem;
+max-width: 100px;
+    transition: max-width;
+    transition-duration: 1s;
+    transition-delay: 1ms;
+}
+#projects a img:hover {
+    max-width: 150px;
+}
+#projects span{
+    width: 50%;
+    background-color: var(--secondary-color);
+    padding:0 10px 0px 10px;
 }
