@@ -1,14 +1,24 @@
 * {
     box-sizing: border-box;
 }
+:root {
+    --primary-color: rgb(196, 196, 196);
+    --background-color: rgb(92, 92, 92);
+    --accent-color: black;
+
+}
+
+
 body {
-    background-color: rgb(187, 187, 187);
+    background-image: linear-gradient(to top, var(--background-color), var(--primary-color));
+    background-position: left top;
     font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Adobe Gothic Std', Times, serif;
 }
 main {
+    
     border-radius: .45rem;
-    width:60%;
+    width:80%;
     padding: 2rem 1rem;
     margin: auto;
 }
@@ -17,15 +27,32 @@ div {
     flex-direction: column;
     align-items: center;
 }
-section{
+section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 }
 #portrait {
-    max-width: 200px;
+    max-width: 300px;
     height: auto;
     border-radius: 50%;
-    border: 1px solid grey;
-    filter: drop-shadow(3px 3px 50px rgb(26, 23, 23));
+    border: 1px solid rgb(44, 44, 44);
+    filter: drop-shadow(0px 20px 30px --accent-color);
+}
+#my-projects {
+    width: 100%;
+    display: flex;
+    background-image: linear-gradient(to bottom, var(--background-color), var(--primary-color));
+    margin-top: 1.5rem;
+    border-radius:.45rem;
+}
+#projects{
+    flex-direction: column;
+    align-items: center;
+
+    
 }
 #personal-links {
     display: flex;
 }
+
