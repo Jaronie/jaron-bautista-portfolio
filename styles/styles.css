@@ -29,7 +29,6 @@ margin: auto;
 max-width: 300px;
 height: auto;
 border-radius: 50%;
-background-color: var(--primary-color);
 filter: drop-shadow(0px 20px 30px var(--accent-color));
     transition: max-width;
     transition-duration: 1s;
@@ -48,6 +47,7 @@ p {
 }
 
 #personal-links {
+        background-color: var(--primary-color);
 display: inline-block;
 flex-direction: column;
 }
@@ -70,9 +70,15 @@ a:link {
 a:visited {
     color: var(--accent-color)
 }
-
+#personal-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--primary-color);
+}
 #title {
-   width: 200%; 
+   width: 100%; 
    text-align: center; 
    border-bottom: 1px solid var(--accent-color);
    line-height: 0.1em;
@@ -88,11 +94,11 @@ a:visited {
     text-align: center; 
     border-bottom: 1px solid var(--accent-color);
     line-height: 0.1em;
-    margin: 10px 0 20px;
+    margin: 10px 0 10px 0;
 }
 h2 span{
     background-color: var(--primary-color);
-    padding:0 10px;
+    padding:0 10px 0px 10px;
 }
 
 body {
@@ -103,17 +109,15 @@ font-family: 'Adobe Gothic Std', Times, serif;
 }
 
 div {
+background-color: var(--secondary-color);
 display: flex;
 flex-direction: column;
 margin-top: 1.5rem;
 align-items: center;
+gap: 0.5rem;
+text-align: center;
 }
-section {
-background-color: var(--primary-color);
-display: flex;
-flex-direction: column;
-align-items: center;
-}
+
 
 #objective {
     background-color: var(--primary-color);
@@ -122,7 +126,7 @@ align-items: center;
 }
 
 #education {
-    background-color: var(--secondary-color);
+
     border-radius: 5rem;
     padding: 2rem 0 2rem 0;
     width: 100%;
@@ -161,22 +165,19 @@ align-items: center;
     
 }
 #experience span{
-    width: 50%;
+    width: 100%;
     background-color: var(--secondary-color);
     padding:0 10px 0px 10px;
 }
-
 ul li {
-    list-style-position: inside;
-    width: 100%;
-    border-radius: .45rem;
-    margin: 0.5rem 0.75rem;
-    padding: 1rem 0rem 0.5rem 1rem;
+    transition: .5s;
     background-color: var(--primary-color);
-    transition: 1s
-
+    border-radius: .45rem;
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 1rem;
+    width: 400pt;
+    text-align: left;
 }
-
 ul li:hover {
     transform: scale(1.05);
 }
@@ -206,7 +207,7 @@ max-width: 100px;
     max-width: 150px;
 }
 #projects span{
-    width: 50%;
+    width: 100%;
     background-color: var(--secondary-color);
     padding:0 10px 0px 10px;
 }
