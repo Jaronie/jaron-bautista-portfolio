@@ -89,14 +89,15 @@ a:visited {
     background-color: var(--primary-color);
     padding:0 10px 50px 10px;
 }
-#objective h2, #education h1, #education h2, #experience h1, #projects h1 {
-    width: 50%;
+h1{
+    width: 80%; 
+    display: inline-block;
     text-align: center; 
     border-bottom: 1px solid var(--accent-color);
     line-height: 0.1em;
     margin: 10px 0 10px 0;
 }
-h2 span{
+h1 span{
     background-color: var(--primary-color);
     padding:0 10px 0px 10px;
 }
@@ -126,10 +127,10 @@ text-align: center;
 }
 
 #education {
-
-    border-radius: 5rem;
-    padding: 2rem 0 2rem 0;
     width: 100%;
+    border-radius: 5rem;
+    padding: 2rem 0 1rem 0;
+    margin-bottom: 3rem;
 }
 #education span {
     background-color: var(--secondary-color);
@@ -157,7 +158,6 @@ text-align: center;
 }
 
 #experience {
-    background-color: var(--secondary-color);
     width: 100%;
     border-radius: 5rem;
     padding: 2rem 0 1rem 0;
@@ -169,32 +169,31 @@ text-align: center;
     background-color: var(--secondary-color);
     padding:0 10px 0px 10px;
 }
-ul li {
-    transition: .5s;
-    background-color: var(--primary-color);
-    border-radius: .45rem;
-    margin: 0.5rem 0 0.5rem 0;
-    padding: 1rem;
-    width: 400pt;
-    text-align: left;
+
+#skills {
+    width: 100%;
+    border-radius: 5rem;
+    padding: 2rem 0 1rem 0;
+    margin-bottom: 3rem;
 }
-ul li:hover {
-    transform: scale(1.05);
+#skills span{
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding:0 10px 0px 10px;
 }
 
 #my-projects {
 display: flex;
 flex-direction: column;
 align-items: center;
-width: 100%;
 margin-top: 1.5rem;
-background-color: var(--secondary-color);
-border-radius: 2rem;
 
 }
 #projects {
-    padding: 1rem 1rem 30px 1rem;
-    align-items: center;
+    width: 100%;
+    border-radius: 5rem;
+    padding: 2rem 0 2rem 0;
+    margin-bottom: 3rem;
 }
 
 #projects a img {
@@ -210,4 +209,16 @@ max-width: 100px;
     width: 100%;
     background-color: var(--secondary-color);
     padding:0 10px 0px 10px;
+}
+ul li {
+    transition: .5s;
+    background-color: var(--primary-color);
+    border-radius: .45rem;
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 1rem;
+    width: 400pt;
+    text-align: left;
+}
+ul li:hover {
+    transform: scale(1.05);
 }
