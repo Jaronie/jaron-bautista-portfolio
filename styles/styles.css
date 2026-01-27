@@ -222,3 +222,15 @@ ul li {
 ul li:hover {
     transform: scale(1.05);
 }
+
+#email-link:link {
+    text-decoration: none;
+}
+
+#email-link:visited {
+    text-decoration: none;
+}
+
+#email-link:hover, #email-link:active {
+    text-decoration: underline;
+}
