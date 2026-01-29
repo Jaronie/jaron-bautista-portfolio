@@ -8,14 +8,33 @@ box-sizing: border-box;
 --accent-color: black;
 
 }
-/* from w3schools.com */
-@media (min-width: 600px) {
-  .header {grid-area: 1 / span 6;}
-  .menu {grid-area: 2 / span 1;}
-  .content {grid-area: 2 / span 4;}
-  .facts {grid-area: 2 / span 1;}
-  .footer {grid-area: 3 / span 6;}
+@media (max-width: 600px) {
+
+  main {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  #portrait {
+    max-width: 200px;
+  }
+
+  ul li {
+    width: 30%;
+    padding: 1rem;
+  }
+
+  #logos img,
+  #projects a img {
+    max-width: 60px;
+  }
+
+  p {
+    font-size: 14pt;
+    padding: 0 0.5rem;
+  }
 }
+
 
 main {
 border-radius: .45rem;
@@ -41,7 +60,6 @@ filter: drop-shadow(0px 20px 30px var(--accent-color));
 p {
     font-size: 16pt;
     margin: 0.5rem 0;
-    display: flex;
     justify-content: center;
     text-align: center;
 }
@@ -211,12 +229,13 @@ max-width: 100px;
     padding:0 10px 0px 10px;
 }
 ul li {
+
     transition: .5s;
     background-color: var(--primary-color);
     border-radius: .45rem;
     margin: 0.5rem 0 0.5rem 0;
     padding: 1rem;
-    width: 400pt;
+    width: 100%;
     text-align: left;
 }
 ul li:hover {
